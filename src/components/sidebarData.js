@@ -1,6 +1,6 @@
 const sidebarItems = [
-  { id: 1, icon: 'fa-solid fa-chart-line', text: 'Dashboard' },
-  { id: 2, icon: 'fa-solid fa-address-book', text: 'Contacts' },
+  { id: 1, icon: 'fa-solid fa-chart-line', text: 'dashboard' },
+  { id: 2, icon: 'fa-solid fa-address-book', text: 'contacts' },
   {
     id: 3,
     icon: 'fa-solid fa-file-invoice',
