@@ -151,6 +151,10 @@ nav {
   font-size: 2rem;
 }
 
+.side-bar-active {
+  color: var(--accent-clr);
+}
+
 /* dashboard */
 .dashboard {
 }
