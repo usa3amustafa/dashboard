@@ -141,7 +141,13 @@ nav {
   align-items: center;
   gap: 0.5rem;
   padding: 2rem;
-  padding-bottom: 0;
+  cursor: pointer;
+
+  transition: background-color 0.3s ease-in-out;
+}
+
+.side-bar-item:hover {
+  background-color: #0badc2ab;
 }
 
 .side-bar-item:last-child {
@@ -154,6 +160,7 @@ nav {
 
 .side-bar-active {
   color: var(--accent-clr);
+  background-color: #0badc2ab;
 }
 
 /* dashboard */
@@ -536,4 +543,43 @@ select {
   .search-icon {
     padding: 0.25rem 0.75rem;
   }
+}
+
+.profile-name {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  z-index: 20;
+  top: 30px;
+  left: -30px;
+  background-color: var(--pri-clr-light);
+  width: 150px;
+
+  height: 0px;
+  overflow: hidden;
+
+  transition: height 0.3s ease-in-out;
+}
+
+.show-dropdown {
+  height: 125px;
+}
+
+.dropdown-link {
+  padding: 0.5rem;
+  border-bottom: 1px solid var(--grey-1);
+  cursor: pointer;
+
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.dropdown-link:hover {
+  background-color: var(--pri-clr);
+  color: var(--grey-1);
+}
+
+.dropdown-link:last-child {
+  border: none;
 }
