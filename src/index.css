@@ -35,6 +35,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 1rem;
   padding: 1rem 2rem;
 }
 
@@ -72,12 +73,12 @@ nav {
   border-radius: 5rem;
   padding: 0.5rem;
   font-size: 1rem;
-  width: 30ch;
+  width: 20rem;
 }
 
 .bell-icon {
-  height: 50px;
-  width: 50px;
+  height: 3rem;
+  width: 3rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -108,8 +109,8 @@ nav {
 }
 
 .profile-img {
-  height: 50px;
-  width: 50px;
+  height: 3rem;
+  width: 3rem;
   border-radius: 2rem;
   object-fit: cover;
 }
@@ -124,7 +125,7 @@ nav {
 /* main */
 .main {
   display: grid;
-  grid-template-columns: 10vw auto;
+  grid-template-columns: 12vw 86.25vw;
 }
 
 /* sidebar */
@@ -173,16 +174,13 @@ nav {
   display: flex;
   align-items: center;
   gap: 1rem;
-  flex-shrink: 1;
-
   overflow: hidden;
   position: relative;
 }
 
 .carousel-item {
   height: 250px;
-  min-width: calc(50% - 2rem);
-  max-width: 320px;
+  min-width: 48%;
   border-radius: 12px;
 
   background-size: cover;
@@ -261,13 +259,14 @@ nav {
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
+  cursor: pointer;
 }
 
 /* cards */
 
 .cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
+  display: flex;
+  flex-wrap: wrap;
   column-gap: 0.5rem;
 
   height: 0px;
@@ -277,7 +276,7 @@ nav {
 }
 
 .cards-open {
-  height: 10rem;
+  height: auto;
 }
 
 .card {
@@ -288,7 +287,7 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: stretch;
-
+  margin-bottom: 1rem;
   height: 10rem;
 }
 
@@ -303,6 +302,7 @@ nav {
   background-color: transparent;
   border: none;
   outline: none;
+  cursor: pointer;
 }
 
 /* form */
@@ -451,10 +451,36 @@ select {
 }
 
 @media (max-width: 900px) {
-  /* navbar */
+  .dashboard {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .carousel {
+    width: auto;
+  }
+
+  .carousel-item {
+    min-width: 95%;
+  } /* navbar */
 
   .profile-name {
     display: none;
+  }
+
+  .profile-img,
+  .bell-icon {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .search-input {
+    font-size: 1rem;
+    width: 15rem;
+  }
+
+  .search-icon {
+    padding: 0.5rem 1rem;
   }
 
   /* main */
@@ -498,5 +524,16 @@ select {
   /* form */
   .form-content {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 500px) {
+  .search-input {
+    width: 12rem;
+    font-size: 0.75rem;
+  }
+
+  .search-icon {
+    padding: 0.25rem 0.75rem;
   }
 }

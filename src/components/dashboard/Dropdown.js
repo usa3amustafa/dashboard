@@ -10,11 +10,8 @@ const Dropdown = props => {
     <>
       <div className='dropdown'>
         <div className='dropdown-topbar'>
-          <h2 className='dropdown-title'>
-            <i
-              className='fa-solid fa-chevron-up dropdown-btn'
-              onClick={() => handleOpen(isOpen)}
-            ></i>
+          <h2 className='dropdown-title' onClick={() => handleOpen(isOpen)}>
+            <i className='fa-solid fa-chevron-up dropdown-btn'></i>
             {props.dropdownItem.dropdownTitle} (
             {props.dropdownItem.cards.length})
           </h2>

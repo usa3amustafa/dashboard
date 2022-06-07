@@ -13,7 +13,8 @@ const App = () => {
         <div className='container main'>
           <Sidebar />
           <div className='dashboard'>
-            <Form />
+            {/* <Form /> */}
+            <Dashboard />
           </div>
         </div>
       </main>

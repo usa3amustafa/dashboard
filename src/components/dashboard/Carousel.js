@@ -6,10 +6,10 @@ const Carousel = () => {
   const [x, setX] = useState(0)
 
   const goLeft = () => {
-    x === 0 ? setX(-100 * (carouselData.length - 1)) : setX(x + 100)
+    x === 0 ? setX(-105 * (carouselData.length - 1)) : setX(x + 105)
   }
   const goRight = () => {
-    x === -100 * (carouselData.length - 1) ? setX(0) : setX(x - 100)
+    x === -105 * (carouselData.length - 1) ? setX(0) : setX(x - 105)
   }
 
   return (

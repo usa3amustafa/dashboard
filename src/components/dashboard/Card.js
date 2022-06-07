@@ -32,7 +32,7 @@ const Card = props => {
           <i className='fa-solid fa-eye'></i> view
         </button>
         <button className='card-btn '>
-          <i className='fa-solid fa-trash-can'></i> delete
+          <i className='fa-solid fa-trash-can'></i> {props.cardData.operation}
         </button>
       </div>
     </div>

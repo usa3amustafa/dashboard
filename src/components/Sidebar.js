@@ -1,5 +1,4 @@
 import React from 'react'
-import sidebarData from './sidebarData'
 
 const Sidebar = () => {
   return (
